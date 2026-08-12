@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Application_Navigator\\ApplicationNavigator.csproj": {}
+    "C:\\Users\\Upul Jayamaha\\Desktop\\SOC-Application-Navigator\\Application_Navigator\\ApplicationNavigator.csproj": {}
   },
   "projects": {
-    "D:\\Application_Navigator\\ApplicationNavigator.csproj": {
+    "C:\\Users\\Upul Jayamaha\\Desktop\\SOC-Application-Navigator\\Application_Navigator\\ApplicationNavigator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Application_Navigator\\ApplicationNavigator.csproj",
+        "projectUniqueName": "C:\\Users\\Upul Jayamaha\\Desktop\\SOC-Application-Navigator\\Application_Navigator\\ApplicationNavigator.csproj",
         "projectName": "ApplicationNavigator",
-        "projectPath": "D:\\Application_Navigator\\ApplicationNavigator.csproj",
+        "projectPath": "C:\\Users\\Upul Jayamaha\\Desktop\\SOC-Application-Navigator\\Application_Navigator\\ApplicationNavigator.csproj",
         "packagesPath": "C:\\Users\\Upul Jayamaha\\.nuget\\packages\\",
-        "outputPath": "D:\\Application_Navigator\\obj\\",
+        "outputPath": "C:\\Users\\Upul Jayamaha\\Desktop\\SOC-Application-Navigator\\Application_Navigator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Upul Jayamaha\\AppData\\Roaming\\NuGet\\NuGet.Config",

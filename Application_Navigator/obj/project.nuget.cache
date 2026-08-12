@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Rf3hCNAV/oA=",
+  "dgSpecHash": "rh94pMiphZA=",
   "success": true,
-  "projectFilePath": "D:\\Application_Navigator\\ApplicationNavigator.csproj",
+  "projectFilePath": "C:\\Users\\Upul Jayamaha\\Desktop\\SOC-Application-Navigator\\Application_Navigator\\ApplicationNavigator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Upul Jayamaha\\.nuget\\packages\\azure.core\\1.36.0\\azure.core.1.36.0.nupkg.sha512",
     "C:\\Users\\Upul Jayamaha\\.nuget\\packages\\azure.identity\\1.10.4\\azure.identity.1.10.4.nupkg.sha512",
