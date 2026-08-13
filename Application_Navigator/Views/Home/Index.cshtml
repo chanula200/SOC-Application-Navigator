@@ -39,7 +39,7 @@
     <main class="container">
         <section class="header-section" aria-labelledby="page-title">
             <p class="soc-label">Service Operation Center</p>
-            <h1 id="page-title">Choose a <span>system</span> to continue</h1>
+            <h1 id="page-title"><span>Choose a system to continue</span></h1>
             <p class="subtitle">Your central access point for operational systems, monitoring tools, and service management.</p>
         </section>
 
@@ -63,7 +63,61 @@
     </main>
 
     <div id="status-message" class="status-message" role="status" aria-live="polite"></div>
+
+    <!-- Service ID Modal -->
+    <div id="service-id-overlay" class="sid-overlay" role="dialog" aria-modal="true" aria-labelledby="sid-title" style="display:none">
+        <div class="sid-modal">
+            <img src="/slt-logo.svg?v=20260812-2" alt="SLT Mobitel" class="sid-logo">
+            <h2 id="sid-title" class="sid-title">Enter Your Service ID</h2>
+            <p class="sid-subtitle">Please enter your 6-digit employee Service ID to continue.</p>
+            <input id="sid-input" class="sid-input" type="text" inputmode="numeric" maxlength="6" placeholder="e.g. 123456" autocomplete="off">
+            <p id="sid-error" class="sid-error" aria-live="polite"></p>
+            <div class="sid-actions">
+                <button id="sid-cancel" class="sid-btn sid-btn-cancel" type="button">Cancel</button>
+                <button id="sid-confirm" class="sid-btn sid-btn-confirm" type="button">Open System</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .sid-overlay {
+            position: fixed; inset: 0;
+            background: rgba(5, 17, 56, 0.72);
+            backdrop-filter: blur(6px);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 1000;
+        }
+        .sid-modal {
+            background: #fff;
+            border-radius: 20px;
+            padding: 40px 44px;
+            width: 100%; max-width: 420px;
+            box-shadow: 0 24px 60px rgba(0,0,0,0.25);
+            display: flex; flex-direction: column; align-items: center;
+            text-align: center;
+        }
+        .sid-logo { height: 44px; margin-bottom: 24px; object-fit: contain; }
+        .sid-title { font-size: 22px; font-weight: 800; color: #0f172a; margin-bottom: 8px; }
+        .sid-subtitle { font-size: 14px; color: #64748b; margin-bottom: 24px; line-height: 1.5; }
+        .sid-input {
+            width: 100%; padding: 13px 16px;
+            border: 1.5px solid #e2e8f0; border-radius: 10px;
+            font-size: 18px; font-weight: 700; letter-spacing: 6px;
+            text-align: center; outline: none; color: #0f172a;
+            transition: border-color 0.2s;
+        }
+        .sid-input:focus { border-color: #2563eb; }
+        .sid-input.invalid { border-color: #ef4444; }
+        .sid-error { color: #ef4444; font-size: 13px; min-height: 18px; margin-top: 8px; margin-bottom: 4px; }
+        .sid-actions { display: flex; gap: 12px; margin-top: 24px; width: 100%; }
+        .sid-btn { flex: 1; padding: 12px; border-radius: 10px; font-size: 15px; font-weight: 700; cursor: pointer; border: none; transition: background 0.2s; }
+        .sid-btn-cancel { background: #f1f5f9; color: #475569; }
+        .sid-btn-cancel:hover { background: #e2e8f0; }
+        .sid-btn-confirm { background: #2563eb; color: #fff; }
+        .sid-btn-confirm:hover { background: #1d4ed8; }
+    </style>
+
     <footer class="footer">&copy; @DateTime.Now.Year SLT-MOBITEL &middot; Service Operation Center</footer>
-    <script src="/js/app.js?v=20260812-2"></script>
+    <script src="/js/app.js?v=20260812-3"></script>
 </body>
 </html>
