@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApplicationNavigator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5faa47540ffee74b1231d352c945c1848ee32b38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e0e580c4716b70ba55c385f287209a7c24b450e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApplicationNavigator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApplicationNavigator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
