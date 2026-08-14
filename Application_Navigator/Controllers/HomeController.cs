@@ -1,11 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization;
 using ApplicationNavigator.Models;
 using ApplicationNavigator.Services;
 
 namespace ApplicationNavigator.Controllers
 {
-    [Authorize]
     public class HomeController : Controller
     {
         private readonly NavigationService _navigationService;
@@ -25,13 +23,7 @@ namespace ApplicationNavigator.Controllers
         public IActionResult Navigate(string systemName, string url)
         {
             _navigationService.LogNavigation(systemName, url);
-            
-            return Json(new 
-            { 
-                success = true, 
-                message = $"Navigating to {systemName}",
-                url = url
-            });
+            return Json(new { success = true, message = $"Navigating to {systemName}", url });
         }
     }
 }

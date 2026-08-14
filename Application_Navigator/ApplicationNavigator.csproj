@@ -7,9 +7,4 @@
     <RootNamespace>ApplicationNavigator</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Identity.Web" Version="2.17.1" />
-    <PackageReference Include="Microsoft.Identity.Web.UI" Version="2.17.1" />
-  </ItemGroup>
-
 </Project>

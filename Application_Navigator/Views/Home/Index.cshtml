@@ -2,7 +2,6 @@
 
 @{
     ViewData["Title"] = "Application Navigator";
-    var initials = User.FindFirst("given_name")?.Value?.FirstOrDefault() ?? 'U';
 }
 
 <!DOCTYPE html>
@@ -24,16 +23,7 @@
             </span>
         </a>
 
-        <div class="user-profile">
-            <span class="user-avatar" aria-hidden="true">@initials</span>
-            <span class="user-info">
-                <span class="user-name">@(User.FindFirst("name")?.Value ?? "User")</span>
-                <span class="user-email">@(User.FindFirst("preferred_username")?.Value ?? "user@example.com")</span>
-            </span>
-            <form method="post" action="@Url.Action("Logout", "Account")">
-                <button type="submit" class="logout-btn">Sign out</button>
-            </form>
-        </div>
+
     </header>
 
     <main class="container">
